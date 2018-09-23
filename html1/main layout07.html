@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: grey;
+    color: white;
+    border: 1px solid black;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-right-style: solid;
+    border-color: #0000e6;
+	border-right-width: 1px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #0000e6;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #000000;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #f2f2f2;
+   border-bottom-style: solid;
+  border-color: #0000e6;
+  border-bottom-width: 1px;
+  top: 0;
+    left: 0;
+}
+
+.topnav a {
+  float: left;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+ top: 0;
+    left: 0;
+}
+.topnav a:hover {
+  color: black;
+}
+
+.topnav a.active {
+  color: blue;
+}
+#abc {
+    background-color: lightgrey;
+    width: 150px;
+    border: 1px solid blue;
+    padding: 25px;
+    right-margin: 12px;
+    align: right;
+}
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body background="8.jpg">
+
+<div class="sidenav">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="wikil3.png" height="170" width="150" align="center">
+  <br>
+  <br>
+  <br>
+  <a href="main layout001.html"><b>INTRODUCTION</b></a>
+  <a href="main layout01.html"><b>HTML TAGS</b></a>
+  <a href="main layout02.html"><b>BASIC TAGS</b></a>
+  <a href="main layout03.html"><b>FORM</b></a>
+  <a href="main layout04.html"><b>FRAME</b></a>
+  <a href="main layout05.html"><b>LIST</b></a>
+  <a href="main layout06.html"><b>MISCELLANEOUS</b></a>
+  <a href="main layout07.html"><b>TABLE</b></a>
+  <a href="main layout08.html"><b>CSS</b></a>
+  <a href="main layout09.html"><b>STYLE SHEETS TYPE</b></a>
+  <a href="main layout10.html"><b>SELECTORS TYPE</b></a>
+</div>
+
+<div class="main">
+ 
+  <div class="topnav">
+  <a class="active" href="front page.html">Home</a>
+  <a href="CONTENTS.html">Contents</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+
+ <table>
+<tr>
+<td>
+<font face = "Algerian" size = "10" align="center">
+<h1>TABLE TAG </h1>
+</font>
+<img src="table.png" width="1500" >
+<font face = "Californian FB" size = "5">
+<p>
+It helps to represent the informations or datas in tabular form.To create an efficient table row spans and column spans are used as an attribute.The process of merging one or more shells is known as span.If the shells are spanned rows wise then it is known as row span.If the shells are spanned column wise then it is known as column span.
+</br><strong>Syntax :</strong>&lttable>&lttr>&ltth>&lt/th>...&ltth>&lt/th>&lt/tr>&lt/table>
+</p>
+<strong>For example :</strong>
+</br>
+<strong>INPUT CODE :</strong>
+</br>
+&lttable border="1">
+</br>
+&lttr>
+</br>
+&ltth rowspan="2">Name&lt/th>
+</br>
+&ltth colspan="3">Mark&lt/th>
+</br>
+&lt/tr>
+</br>
+&lttr>
+</br>
+&ltth>sub1&lt/th>
+</br>
+&ltth>sub2&lt/th>
+</br>
+&ltth>sub3&lt/th>
+</br>
+&lt/tr>
+</br>
+&lttr>
+</br>
+&ltth>x&lt/th>&lttd>10&lt/td>&lttd>20&lt/td>&lttd>30&lt/td>
+</br>
+&lt/tr>
+</br>
+&lttr>
+</br>
+&ltth>y&lt/th>&lttd>15&lt/td>&lttd>25&lt/td>&lttd>24&lt/td>
+</br>
+&lt/tr>
+</br>
+&lttr>
+</br>
+&ltth>z&lt/th>&lttd>12&lt/td>&lttd>20&lt/td>&lttd>28&lt/td>
+</br>
+&lt/tr>
+</br>
+&lt/table>
+</br><strong>OUTPUT :</strong>
+
+
+
+
+
+<table border="1">
+<tr>
+<th rowspan="2">Name</th>
+<th colspan="3">Mark</th>
+</tr>
+<tr>
+<th>sub1</th>
+<th>sub2</th>
+<th>sub3</th>
+</tr>
+<tr>
+<th>x</th><td>10</td><td>20</td><td>30</td>
+</tr>
+<tr>
+<th>y</th><td>15</td><td>25</td><td>24</td>
+</tr>
+<tr>
+<th>z</th><td>12</td><td>20</td><td>28</td>
+</tr>
+</table>
+<hr size="5" color="black">
+<td>
+<table align="right">
+<tr>
+<td>
+<div id="abc"		>This text is the actual content of the box. We have added a 25px padding, 25px margin and a 25px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</p>
+<div class="center">
+  <div class="pagination">
+    <a href="">&laquo;</a>
+    <a href="main layout001.html">1</a>
+    <a href="main layout01.html">2</a>
+    <a href="main layout02.html">3</a>
+    <a href="main layout03.html">4</a>
+    <a href="main layout04.html">5</a>
+    <a href="main layout05.html">6</a>
+	<a href="main layout06.html">7</a>
+	<a href="main layout07.html" class="active">8</a>
+	<a href="main layout08.html">9</a>
+	<a href="main layout09.html">10</a>
+	<a href="main layout10.html">11</a>
+    <a href="">&raquo;</a>
+  </div>
+</div>
+
+</div>
+    
+</body>
+</html> 

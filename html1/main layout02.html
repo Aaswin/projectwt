@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: grey;
+    color: white;
+    border: 1px solid black;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-right-style: solid;
+    border-color: #0000e6;
+	border-right-width: 1px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #0000e6;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #000000;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #f2f2f2;
+   border-bottom-style: solid;
+  border-color: #0000e6;
+  border-bottom-width: 1px;
+  top: 0;
+    left: 0;
+}
+
+.topnav a {
+  float: left;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+ top: 0;
+    left: 0;
+}
+.topnav a:hover {
+  color: black;
+}
+
+.topnav a.active {
+  color: blue;
+}
+#abc {
+    background-color: lightgrey;
+    width: 150px;
+    border: 1px solid blue;
+    padding: 25px;
+    right-margin: 12px;
+    align: right;
+}
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body background="8.jpg">
+
+<div class="sidenav">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="wikil3.png" height="170" width="150" align="center">
+  <br>
+  <br>
+  <br>
+  <a href="main layout001.html"><b>INTRODUCTION</b></a>
+  <a href="main layout01.html"><b>HTML TAGS</b></a>
+  <a href="main layout02.html"><b>BASIC TAGS</b></a>
+  <a href="main layout03.html"><b>FORM</b></a>
+  <a href="main layout04.html"><b>FRAME</b></a>
+  <a href="main layout05.html"><b>LIST</b></a>
+  <a href="main layout06.html"><b>MISCELLANEOUS</b></a>
+  <a href="main layout07.html"><b>TABLE</b></a>
+  <a href="main layout08.html"><b>CSS</b></a>
+  <a href="main layout09.html"><b>STYLE SHEETS TYPE</b></a>
+  <a href="main layout10.html"><b>SELECTORS TYPE</b></a>
+</div>
+
+<div class="main">
+ 
+  <div class="topnav">
+  <a class="active" href="front page.html">Home</a>
+  <a href="CONTENTS.html">Contents</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+<table>
+<tr>
+<td>
+<font face = "Algerian" size = "10" align="center">
+<h1>SOME BASIC TAGS </h1>
+</font>
+<font face = "Californian FB" size = "5">
+<p>
+<img src="tags.jpg" width="1500"><br><br>
+<img src="tags2.png"  width="850" align="right" >
+<img src="tag3.jpg" ><br><br>
+<font face = "Algerian" size = "6">
+<h1>1.HTML Tag</h1>
+</font>
+It reperesents the the root of the html documents.It is a container that contain all the other html elements.
+</br><strong>Syntax :</strong>&lthtml>&lt/html> 
+</p>
+<p>
+<font face = "Algerian" size = "6">
+<h1>2.HTML Tag</h1>
+</font>
+It represents the document header which can keep other html tags like title,links,etc.It contains a collection of meta data.
+</br><strong>Syntax:</strong>&lthead>&lt/head>
+</p>
+<p>
+<font face = "Algerian" size = "6">
+<h1>3.HTML Tag</h1>
+</font>
+It represents the title name of the html document.The title element or the title contents are typically displayed in the browser's title bar.
+</br><strong>Syntax :</strong>&lttitle>&lt/title>
+</p>
+<p>
+<font face = "Algerian" size = "6">
+<h1>4.HTML Tag</h1>
+</font>
+It is used for declaring the main content section of the html document.The web page content is inserted between the opening and the closing tag.
+</br><strong>Syntax :</strong>&ltbody>&lt/body>
+</p>
+<p>
+<font face = "Algerian" size = "6">
+<h1>5.HTML Tag</h1>
+</font>
+It can use different size of a headings.It has six level of heading i.e.(in decreasing order of their sizes)h1,h2,h3,h4,h5 and h6.
+</br><strong>Syntax :</strong>&lth1>&lt/h1>,&lth2>&lt/h2>...&lth6>&lt/h6>
+</p>
+<p>
+<font face = "Algerian" size = "6">
+<h1>6.HTML Tag</h1>
+</font>
+Each paragraph of text should go between an opening tag &ltp> and closing tag &lt/p>.
+</br><strong>Syntax :</strong>&ltp>&lt/p>
+<img src="tag4.gif" align="right" >
+</p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr size="5" color="black">
+
+</td>
+<td>
+<table align="right">
+<tr>
+<td>
+<div id="abc"		>This text is the actual content of the box. We have added a 25px padding, 25px margin and a 25px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</p>
+<div class="center">
+  <div class="pagination">
+    <a href="">&laquo;</a>
+    <a href="main layout001.html">1</a>
+    <a href="main layout01.html">2</a>
+    <a href="main layout02.html" class="active">3</a>
+    <a href="main layout03.html">4</a>
+    <a href="main layout04.html">5</a>
+    <a href="main layout05.html">6</a>
+	<a href="main layout06.html">7</a>
+	<a href="main layout07.html">8</a>
+	<a href="main layout08.html">9</a>
+	<a href="main layout09.html">10</a>
+	<a href="main layout10.html">11</a>
+    <a href="">&raquo;</a>
+  </div>
+</div>
+
+</div>
+    
+</body>
+</html> 

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: grey;
+    color: white;
+    border: 1px solid black;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-right-style: solid;
+    border-color: #0000e6;
+	border-right-width: 1px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #0000e6;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #000000;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #f2f2f2;
+   border-bottom-style: solid;
+  border-color: #0000e6;
+  border-bottom-width: 1px;
+  top: 0;
+    left: 0;
+}
+
+.topnav a {
+  float: left;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+ top: 0;
+    left: 0;
+}
+.topnav a:hover {
+  color: black;
+}
+
+.topnav a.active {
+  color: blue;
+}
+#abc {
+    background-color: lightgrey;
+    width: 150px;
+    border: 1px solid blue;
+    padding: 25px;
+    right-margin: 12px;
+    align: right;
+}
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body background="8.jpg">
+
+<div class="sidenav">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="wikil3.png" height="170" width="150" align="center">
+  <br>
+  <br>
+  <br>
+  <a href="main layout001.html"><b>INTRODUCTION</b></a>
+  <a href="main layout01.html"><b>HTML TAGS</b></a>
+  <a href="main layout02.html"><b>BASIC TAGS</b></a>
+  <a href="main layout03.html"><b>FORM</b></a>
+  <a href="main layout04.html"><b>FRAME</b></a>
+  <a href="main layout05.html"><b>LIST</b></a>
+  <a href="main layout06.html"><b>MISCELLANEOUS</b></a>
+  <a href="main layout07.html"><b>TABLE</b></a>
+  <a href="main layout08.html"><b>CSS</b></a>
+  <a href="main layout09.html"><b>STYLE SHEETS TYPE</b></a>
+  <a href="main layout10.html"><b>SELECTORS TYPE</b></a>
+</div>
+
+<div class="main">
+ 
+  <div class="topnav">
+  <a class="active" href="front page.html">Home</a>
+  <a href="CONTENTS.html">Contents</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+
+<table>
+<tr>
+<td>
+<font face = "Algerian" size = "6" align="center">
+<h1>1.Strong Tag </h1>
+</font>
+<font face = "Californian FB" size = "5">
+<p>
+<img src="1.png" width="1500" ><br><br><br>
+The strong tag is used to highlight the text by making it bold.
+</br><strong>Syntax :</strong>&ltstrong>Text to be bolded&lt/strong>
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6" align="center">
+<h1>2.Horizontol Line Tag </h1>
+</font>
+<p>
+<img src="2.png" width="1500" ><br><br><br>
+This tag is used to draw a horizontal line in the web page.It is an empty tag.
+</br><strong>Syntax :</strong>&lthr>
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6" align="center">
+<h1>3.Break Tag </h1>
+</font>
+<p>
+<img src="3.png" width="1500" ><br><br><br>
+Break tags are generally use to skip a line and continue writing the text from the next line.
+</br><strong>Syntax :</strong>&lt/br>
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6" align="center">
+<h1>4.Supscript and Subscript Tag</h1>
+</font>
+<p>
+<img src="4.png" width="1500" ><br><br><br>
+The supscript tag is used to assign expopnential power to the texts(generally used for mathematical terms).Similarly,the subscript tags are used to assign a base to some text.
+</br><strong>Syntax for supscript tag :</strong>&ltsup>&lt/sup>
+</br><strong>Syntax for subscript tag :</strong>&ltsub>&lt/sub>
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6" align="center">
+<h1>5.Image Tag</h1>
+</font>
+<img src="5.png" width="1500" ><br><br><br>
+It is used to import images in the page.It is an empty tag i.e.it has an opening tag but no closing tag.
+</br><strong>Syntax :</strong>&ltimg src="xyz.jpg">
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6" align="center">
+<h1>6.Underline Tag</h1>
+</font>
+<p>
+<img src="6.png" width="1500" ><br><br><br>
+The underline tag is used to underline some text in order to highlight it.
+</br><strong>Syntax :</strong>&ltu>&lt/u>
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6" align="center">
+<h1>7.Striked Textline Tag </h1>
+</font>
+<p>
+<img src="7.png" width="1500" ><br><br><br>
+This tag is used to have striked words.
+</br><strong>Syntax :</strong>&lts>&lt/s>
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6" align="center">
+<h1>8.Itallic Textline Tag</h1>
+</font>
+<p>
+<img src="i.png" width="1500" ><br><br><br>
+It is used to assign the font style to itallic.The texts written between its opening and closing tag are in itallic form.
+</br><strong>Syntax :</strong>&lti>&lt/i>
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6" align="center">
+<h1>9.Font Tag</h1>
+</font>
+<p>
+<img src="9.png" width="1500" ><br><br><br>
+The font tag is used to assign font style ,size and color to the texts.
+</br><strong>Syntax :</strong>&ltfont style="color:green" size="6">&lt/font>
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6" align="center">
+<h1>10.Time Tag</h1>
+</font>
+<img src="10.png" width="1500" ><br><br><br>
+The &lttime> tag defines a human-readable date/time.
+This element can also be used to encode dates and times in a machine-readable way so that user agents can offer to add birthday reminders or scheduled events to the user's calendar, and search engines can produce smarter search results.
+</br><strong>Syntax :</strong>&lttime>&lt/time>
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6" align="center">
+<h1>11.Link Tag</h1>
+</font>
+<p>
+<img src="11.png" width="1500" ><br><br><br>
+The &ltlink> tag defines a link between a document and an external resource.
+The &ltlink> tag is used to link to external style sheets.
+</br><strong>Syntax :</strong>&ltlink rel="stylesheet" type="text/css" href="theme.css">
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6" align="center">
+<h1>12.Delete Tag</h1>
+</font>
+<p>
+<img src="12.png" width="1500" ><br><br><br>
+The &ltdel> tag defines text that has been deleted from a document.
+</br><strong>Syntax :</strong>&ltdel>&lt/del>
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6" align="center">
+<h1>13.Insertion Tag</h1>
+</font>
+<p>
+<img src="13.png" width="1500" ><br><br><br>
+The &ltins> tag defines a text that has been inserted into a document.
+</br><strong>Syntax :</strong>&ltins>&lt/ins>
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6" align="center">
+<h1>14.Audio Tag</h1>
+</font>
+<p>
+<img src="14.png" width="1500" ><br><br><br>
+The &ltaudio> tag defines sound, such as music or other audio streams.
+Currently, there are 3 supported file formats for the &ltaudio> element: MP3, WAV, and OGG.
+</br><strong>Syntax :</strong>&ltaudio controls>&ltsource src="xyz.mp3" type="audio/mpeg">&lt/audio>
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6" align="center">
+<h1>15.Video Tag </h1>
+</font>
+<p>
+<img src="15.png" width="1500" ><br><br><br>
+The &ltvideo> tag specifies video, such as a movie clip or other video streams.
+Currently, there are 3 supported video formats for the &ltvideo> element: MP4, WebM, and Ogg.
+</br><strong>Syntax :</strong>&ltvideo width="320" height="240" controls>&ltsource src="xyz.mp4" type="video/mp4">&lt/video>
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6" align="center">
+<h1>16.Navigation Tag </h1>
+</font>
+<p>
+<img src="16.png" width="1500" ><br><br><br>
+The &ltnav> tag defines a set of navigation links.
+Notice that NOT all links of a document should be inside a &ltnav> element. The &ltnav> element is intended only for major block of navigation links.
+Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
+</br><strong>Syntax :</strong>&ltnav>&lta href="/html/">&lt/a>&lt/nav>
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6" align="center">
+<h1>17.MARQUEE Tag </h1>
+</font>
+<p>
+<img src="17.png" width="1500" ><br><br><br>
+The &ltmarquee> is a non-standard HTML tag which was used to create a scrolling text or an image.
+It was used to make the text/image scroll horizontally across or vertically down the web page.
+</p>
+<hr size="5" color="black">
+
+</td>
+<td>
+<table align="right">
+<tr>
+<td>
+<div id="abc"		>This text is the actual content of the box. We have added a 25px padding, 25px margin and a 25px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</p>
+<div class="center">
+  <div class="pagination">
+    <a href="">&laquo;</a>
+    <a href="main layout001.html">1</a>
+    <a href="main layout01.html">2</a>
+    <a href="main layout02.html">3</a>
+    <a href="main layout03.html">4</a>
+    <a href="main layout04.html">5</a>
+    <a href="main layout05.html">6</a>
+	<a href="main layout06.html" class="active">7</a>
+	<a href="main layout07.html">8</a>
+	<a href="main layout08.html">9</a>
+	<a href="main layout09.html">10</a>
+	<a href="main layout10.html">11</a>
+    <a href="">&raquo;</a>
+  </div>
+</div>
+
+</div>
+    
+</body>
+</html> 

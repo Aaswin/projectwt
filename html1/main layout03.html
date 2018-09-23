@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: grey;
+    color: white;
+    border: 1px solid black;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-right-style: solid;
+    border-color: #0000e6;
+	border-right-width: 1px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #0000e6;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #000000;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #f2f2f2;
+   border-bottom-style: solid;
+  border-color: #0000e6;
+  border-bottom-width: 1px;
+  top: 0;
+    left: 0;
+}
+
+.topnav a {
+  float: left;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+ top: 0;
+    left: 0;
+}
+.topnav a:hover {
+  color: black;
+}
+
+.topnav a.active {
+  color: blue;
+}
+#abc {
+    background-color: lightgrey;
+    width: 150px;
+    border: 1px solid blue;
+    padding: 25px;
+    right-margin: 12px;
+    align: right;
+}
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body background="8.jpg">
+
+<div class="sidenav">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="wikil3.png" height="170" width="150" align="center">
+  <br>
+  <br>
+  <br>
+  <a href="main layout001.html"><b>INTRODUCTION</b></a>
+  <a href="main layout01.html"><b>HTML TAGS</b></a>
+  <a href="main layout02.html"><b>BASIC TAGS</b></a>
+  <a href="main layout03.html"><b>FORM</b></a>
+  <a href="main layout04.html"><b>FRAME</b></a>
+  <a href="main layout05.html"><b>LIST</b></a>
+  <a href="main layout06.html"><b>MISCELLANEOUS</b></a>
+  <a href="main layout07.html"><b>TABLE</b></a>
+  <a href="main layout08.html"><b>CSS</b></a>
+  <a href="main layout09.html"><b>STYLE SHEETS TYPE</b></a>
+  <a href="main layout10.html"><b>SELECTORS TYPE</b></a>
+</div>
+
+<div class="main">
+ 
+  <div class="topnav">
+  <a class="active" href="front page.html">Home</a>
+  <a href="CONTENTS.html">Contents</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+
+ <table>
+<tr>
+<td>
+<font face = "Algerian" size = "10" align="center">
+<h1>FORM TAG </h1>
+</font>
+<font face = "Californian FB" size = "5">
+The form makes the web pages more interactive.It consists of form field.The user of the program fill up the field with the required information and then the information is then submitted to the web browser.There are generally six types of form tags used which should be written between the opening form tag i.e.&ltform> and the closing form tag i.e.&lt/form>.The tags are:
+<br>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6">
+<h1>A.Text Input Control Tag</h1>
+</font>
+<p>
+<img src="text.png" width="1500" >
+It allows the user of the program to input the texts in the alloted area.It is of two types.They are single line input control tag and password input control tag.They both are empty tags.
+<br><strong>Syntax for single line input control tag :</strong>&ltinput type="text" name="xyz" value="pqr">
+<br><strong>Syntax for password input control tag :</strong>&ltinput type="password" name="xyz">
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6">
+<h1>B.Check Box Control Tagg</h1>
+</font>
+<p>
+<img src="check.png"width="1500" >
+More than one options can be selected using check box control tag.It can be created by using the input tag and the type attribute is set to checkbox.
+<br><strong>Syntax :</strong>&ltinput type="checkbox" name="xyz" value="pqr">
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6">
+<h1>C.Radio Box Control Tag</h1>
+</font>
+<p>
+<img src="radio.png" width="1500" >
+It helps the user of the program to opt out anyone of the options among the given options.
+<br><strong>Syntax :</strong>&ltinput type="radio" name="xyz" value="pqr">  
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6">
+<h1>D.Select Box Control Tag</h1>
+</font>
+<p>
+<img src="menu.png" width="1500" >
+It is also called as a dropped down box which provides an option to list down the various options in the form of drop down list from where a user can select more than one options.
+<br><strong>Syntax :</strong>&ltselect name="dropdown">&ltoption value="xyz">&lt/option>....&ltoption value="abc">&lt/option>
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6">
+<h1>E.Text Area Tag</h1>
+</font>
+<p>
+<img src="textarea.png" width="1500" >
+The multiple lines of text are created using text area tag.It cannot be done by using input tag.It needs the attribute like rows,columns and name.
+<br><strong>Syntax :</strong>&lttextarea name="Description" rows="5" cols="20">&lt/textarea>
+</p>
+<hr size="5" color="black">
+<font face = "Algerian" size = "6">
+<h1>F.Submit and Reset Button</h1>
+</font>
+<p>
+<img src="button.png" width="1500" >
+The submit button tag is used to create a button called submit which helps the user of the program to submit the informations filled up by him/her to the web browser.Similarly,the reset button tag creates a reset button which allows the user to reset the form to the initial stage by clearing all the informations filled up by him/her.
+<br><strong>Syntax for Submit Button :</strong>&ltinput type="submit">
+<br><strong>Syntax for Reset Button :</strong>&ltinput type="reset">
+</p>
+<hr size="5" color="black">
+<strong>For Example :</strong>
+<br>
+<strong>INPUT CODE :</strong>
+<br>
+&lthtml>
+<br>
+&lthead>&lttitle>&lt/title>&lt/head>
+<br>
+&ltbody>
+<br>
+Enter the following details
+<br>
+&lt/br>
+<br>
+&ltform>
+<br>
+Name&ltinput type="text" name="name1">
+<br>
+&lt/br>
+<br>
+Date of birth&ltinput type="text" name="DOB" value="DD/MM/YY">
+<br>
+&lt/br>
+<br>
+Address&lttextarea name="address" rows="5" cols="10">&lt/textarea>
+<br>
+&lt/br>
+<br>
+Sex :&ltinput type="radio" name="male">Male &ltinput type="radio" name="Female">Female
+<br>
+&lt/br>
+<br>
+&ltinput type="reset">&ltinput type="submit">
+<br>
+&lt/form>
+<br>
+&lt/body>
+<br>
+&lt/html>
+<br>
+<strong>OUTPUT:</strong>
+<br>
+
+Enter the following details
+<br>
+<form>
+Name<input type="text" name="name1">
+<br>
+Date of birth<input type="text" name="DOB" value="DD/MM/YY">
+<br>
+Address<textarea name="address" rows="5" cols="10"></textarea>
+<br>
+Sex :<input type="radio" name="male">Male <input type="radio" name="Female">Female
+<br>
+<input type="reset"><input type="submit">
+
+</form>
+<hr size="5" color="black">
+</td>
+<td>
+<table align="right">
+<tr>
+<td>
+<div id="abc"		>This text is the actual content of the box. We have added a 25px padding, 25px margin and a 25px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</p>
+<div class="center">
+  <div class="pagination">
+    <a href="">&laquo;</a>
+    <a href="main layout001.html">1</a>
+    <a href="main layout01.html">2</a>
+    <a href="main layout02.html">3</a>
+    <a href="main layout03.html" class="active">4</a>
+    <a href="main layout04.html">5</a>
+    <a href="main layout05.html">6</a>
+	<a href="main layout06.html">7</a>
+	<a href="main layout07.html">8</a>
+	<a href="main layout08.html">9</a>
+	<a href="main layout09.html">10</a>
+	<a href="main layout10.html">11</a>
+    <a href="">&raquo;</a>
+  </div>
+</div>
+
+</div>
+    
+</body>
+</html> 

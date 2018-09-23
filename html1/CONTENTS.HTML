@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+H2{
+COLOR:BLUE;
+}
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h2 ALIGN="CENTER"><U>CONTENTS</U></h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="main layout06.html">Audio Tag</a></li>
+
+  <li><a href="main layout02.html">Body Tag</a></li>
+  <li><a href="main layout06.html">Br Tag</a></li>
+
+  <li><a href="main layout08.html">Css Tag</a></li>
+  <li><a href="main layout10.html">Class Selectors</a></li>
+  
+  <li><a href="main layout06.html">Delete Tag</a></li>
+  
+  <li><a href="main layout09.html">External Css</a></li>
+  <li><a href="main layout10.html">Element Selectors</a></li>
+  
+  <li><a href="main layout06.html">Font Tag</a></li>
+  <li><a href="main layout03.html">Form Button</a></li>
+  <li><a href="main layout03.html">Form Checkbox</a></li>
+  <li><a href="main layout03.html">Form Password</a></li>
+  <li><a href="main layout03.html">Form Radio</a></li>
+  <li><a href="main layout03.html">Form Select</a></li>
+  <li><a href="main layout03.html">Form Tag</a></li>
+  <li><a href="main layout03.html">Form Text</a></li>    
+  <li><a href="main layout03.html">Form Text Area</a></li>
+  <li><a href="main layout04.html">Frame Tag</a></li>
+  
+  <li><a href="#">Gindy</a></li>
+  
+  <li><a href="main layout02.html">Head Tag</a></li>
+  <li><a href="main layout02.html">Heading Tag</a></li>
+  <li><a href="main layout06.html">Hr Tag</a></li>
+  <li><a href="main layout01.html">Html</a></li>
+  <li><a href="main layout02.html">Html Tag</a></li>
+  <li><a href="main layout01.html">Html Tags</a></li>  
+  <li><a href="main layout01.html">Html Attributes</a></li>
+  
+  <li><a href="main layout10.html">Id Selectors</a></li>
+  <li><a href="main layout06.html">Image Tag</a></li>
+  <li><a href="main layout09.html">Inline Css</a></li>
+  <li><a href="main layout06.html">Insertion Tag</a></li>
+  <li><a href="main layout09.html">Internal Css</a></li>
+  <li><a href="main layout06.html">Italic Tag</a></li>
+  
+  <li><a href="#">Jindy</a></li>
+  
+  <li><a href="#">Kindy</a></li>
+  
+  <li><a href="main layout05.html">Li Tag</a></li>
+  <li><a href="main layout06.html">Link Tag</a></li>
+  
+  <li><a href="#">Mindy</a></li>
+  
+  <li><a href="main layout06.html">Navigation Tag</a></li>
+  
+  <li><a href="main layout05.html">Ol Tag</a></li>
+  
+  <li><a href="main layout02.html">Paragraph Tag</a></li>
+  
+  <li><a href="#">Qindy</a></li>
+  
+  <li><a href="#">Rindy</a></li>
+  
+  <li><a href="main layout06.html">Strong/Bold Tag</a></li>
+  <li><a href="main layout06.html">Strike-through Tag</a></li>
+<li><a href="main layout06.html">Subscript Tag</a></li>
+<li><a href="main layout06.html">Superscript Tag</a></li>  
+  
+  <li><a href="main layout07.html">Table Tag</a></li>
+  <li><a href="main layout07.html">Td Tag</a></li>
+<li><a href="main layout07.html">Th Tag</a></li>
+  <li><a href="main layout02.html">Title Tag</a></li>
+  <li><a href="main layout06.html">Time Tag</a></li>
+<li><a href="main layout07.html">Tr Tag</a></li>  
+  
+  <li><a href="main layout05.html">Ul Tag</a></li>
+  <li><a href="main layout06.html">Underline Tag</a></li>
+  
+  <li><a href="main layout06.html">Video Tag</a></li>
+  
+  <li><a href="#">Windy</a></li>
+  
+  <li><a href="#">Xindy</a></li>
+  
+  <li><a href="#">Yindy</a></li>
+  
+  <li><a href="#">Zindy</a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>

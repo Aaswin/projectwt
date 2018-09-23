@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: grey;
+    color: white;
+    border: 1px solid black;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-right-style: solid;
+    border-color: #0000e6;
+	border-right-width: 1px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #0000e6;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #000000;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #f2f2f2;
+   border-bottom-style: solid;
+  border-color: #0000e6;
+  border-bottom-width: 1px;
+  top: 0;
+    left: 0;
+}
+
+.topnav a {
+  float: left;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+ top: 0;
+    left: 0;
+}
+.topnav a:hover {
+  color: black;
+}
+
+.topnav a.active {
+  color: blue;
+}
+#abc {
+    background-color: lightgrey;
+    width: 150px;
+    border: 1px solid blue;
+    padding: 25px;
+    right-margin: 12px;
+    align: right;
+}
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body background="8.jpg">
+
+<div class="sidenav">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="wikil3.png" height="170" width="150" align="center">
+  <br>
+  <br>
+  <br>
+  <a href="main layout001.html"><b>INTRODUCTION</b></a>
+  <a href="main layout01.html"><b>HTML TAGS</b></a>
+  <a href="main layout02.html"><b>BASIC TAGS</b></a>
+  <a href="main layout03.html"><b>FORM</b></a>
+  <a href="main layout04.html"><b>FRAME</b></a>
+  <a href="main layout05.html"><b>LIST</b></a>
+  <a href="main layout06.html"><b>MISCELLANEOUS</b></a>
+  <a href="main layout07.html"><b>TABLE</b></a>
+  <a href="main layout08.html"><b>CSS</b></a>
+  <a href="main layout09.html"><b>STYLE SHEETS TYPE</b></a>
+  <a href="main layout10.html"><b>SELECTORS TYPE</b></a>
+</div>
+
+<div class="main">
+ 
+  <div class="topnav">
+  <a class="active" href="front page.html">Home</a>
+  <a href="CONTENTS.html">Contents</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+<table>
+<tr>
+<td valign="top">
+<font face = "Algerian" size = "10" align="center">
+<h1>FRAME TAG </h1>
+</font>
+<p>
+<img src="frame.png" width="1500" ><br><br><br>
+<font face = "Californian FB" size = "5">
+The frames are used to divide the browser into multiple sections where each section can lead an individual html document.The collection of frame is known as frame set.In order to use th eform on a page,we use frameset tag instead of body tag.The frameset tag defines how to divide the windows into frame.The row attribute of the frameset tag defines horizontal frame and the column attribute defines vertical frame.
+</br><strong>Syntax :</strong>&ltframeset cols="30%,40%,30%">&ltframe src="a1.html">&ltframe src="a2.html">....&ltframe src="an.html">&lt/frameset>
+</br>Here frame tags are the empty tags.   
+</p>
+<hr size="5" color="black"></td>
+<td>
+<table align="right">
+<tr>
+<td>
+<div id="abc"		>This text is the actual content of the box. We have added a 25px padding, 25px margin and a 25px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</p>
+<div class="center">
+  <div class="pagination">
+    <a href="">&laquo;</a>
+    <a href="main layout001.html">1</a>
+    <a href="main layout01.html">2</a>
+    <a href="main layout02.html">3</a>
+    <a href="main layout03.html">4</a>
+    <a href="main layout04.html" class="active">5</a>
+    <a href="main layout05.html">6</a>
+	<a href="main layout06.html">7</a>
+	<a href="main layout07.html">8</a>
+	<a href="main layout08.html">9</a>
+	<a href="main layout09.html">10</a>
+	<a href="main layout10.html">11</a>
+    <a href="">&raquo;</a>
+  </div>
+</div>
+
+</div>
+    
+</body>
+</html> 
